@@ -1,5 +1,5 @@
 ### ewsdocker/alpine-nginx-pkgcache:3.8.0  
-An un-modified NGINX HHTP Web server image in an Alpine Linux container.  
+A NGINX HHTP Web server image based on [ewsdocker/alpine-nginx](https://github.com/ewsdocker/alpine-nginx).  
 ____  
 
 **Visit the [ewsdocker/alpine-nginx-pkgcache](https://github.com/ewsdocker/alpine-nginx-pkgcache/wiki) Wiki for complete documentation.**  
@@ -18,7 +18,7 @@ ____
 
 **Installing ewsdocker/alpine-nginx-pkgcache**  
 
-The following scripts will download the selected **ewsdocker/alpine-nginx-pkgcache** image, create a container, setup and populate the directory structures, and create the execution script(s).  
+The following script will download the selected **ewsdocker/alpine-nginx-pkgcache** image, create a container, setup and populate the directory structures, and create the execution script(s).  
 
 The _default_ values will install all directories and contents in the **docker host** user's home directory.  
 
@@ -40,8 +40,7 @@ ____
 After running the above command script, and using the settings indicated, the docker host directories, mapped as shown in the above tables, will be configured as follows:
 
  - the executable scripts have been copied to **~/bin**;  
- - the application desktop file(s) have been copied to **~/.local/share/applications**, and are availablie in any _task bar_ menu;  
- - the associated **alpine-nginx-pkgcache-"version"** executable script (shown below) will be found in **~/.local/bin**, and _should_ be customized with proper local volume names.  
+ - the associated **alpine-nginx-pkgcache-"version"** execution script (shown below) will be found in **~/.local/bin**, and _should_ be customized with proper local volume names.  
 
 The installation documentation for [ewsdocker/alpine-nginx]() shows 2 different examples to install the server.  The connection of **ewsdocker/alpine-nginx-pkgcache** to the server depends upon the method of installation, as detailed in the 2 following sections.  
 
