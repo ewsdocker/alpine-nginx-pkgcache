@@ -41,5 +41,5 @@ docker run -d \
            --mount source=pkgcache,target=/usr/share/nginx/html \
            --network=pkgnet \
            --name=alpine-nginx-pkgcache \
-       alpine-nginx-pkgcache:3.8.0  
+       ewsdocker/alpine-nginx-pkgcache:3.8.0  
 
