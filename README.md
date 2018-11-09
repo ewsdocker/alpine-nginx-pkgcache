@@ -1,18 +1,11 @@
 ### ewsdocker/alpine-nginx-pkgcache:3.8.1  
-A NGINX HHTP Web server image based on [ewsdocker/alpine-nginx](https://github.com/ewsdocker/alpine-nginx).  
-____  
+A **NGINX HHTP** Web server image based on [ewsdocker/alpine-nginx](https://github.com/ewsdocker/alpine-nginx).  
 
-**Visit the [ewsdocker/alpine-nginx-pkgcache](https://github.com/ewsdocker/alpine-nginx-pkgcache/wiki) Wiki for complete documentation.**  
-____  
+**alpine-nginx-pkgcache** provides a method, using only existing Docker containers and Docker resources, to add files to a permanent file-cache and retrieve selected files from the file-cache by a running **Docker build** process.  
 
-The **ewsdocker/alpine-nginx-pkgcache** docker image is based on the latest [ewsdocker/alpine-nginx](https://github.com/ewsdocker/alpine-nginx/wiki) docker image.  
-
-- A pre-built **ewsdocker/alpine-nginx-pkgcache Docker** image is available on [Docker Hub](https://hub.docker.com) at [ewsdocker/alpine-nginx-pkgcache](https://hub.docker.com/r/ewsdocker/alpine-nginx-pkgcache/);
-
-- The source for **ewsdocker/alpine-nginx-pkgcache** is available on [GitHub](https://github.com/) at [ewsdocker/alpine-nginx-pkgcache](https://github.com/ewsdocker/alpine-nginx-pkgcache).  
+Learn about the [pkgcache](https://github.com/ewsdocker/ewsdocker.github.io/wiki/pkgcache") project on the [Advanced Docker Concepts - pkgcache](https://github.com/ewsdocker/ewsdocker.github.io/wiki/pkgcache) Wiki page.  
 
 ____  
-
 **Visit the [ewsdocker/alpine-nginx-pkgcache](https://github.com/ewsdocker/alpine-nginx-pkgcache/wiki) Wiki for complete documentation.**  
 ____  
 
@@ -61,8 +54,15 @@ A copy of the **ewsdocker/alpine-nginx-pkgcache** script above is located in the
 
 ____  
 
-**Visit the [ewsdocker/alpine-nginx-pkgcache Wiki](https://github.com/ewsdocker/alpine-nginx-pkgcache/wiki/QuickStart) for complete documentation of this docker image.**  
+The **ewsdocker/alpine-nginx-pkgcache** docker image is based on the latest [ewsdocker/alpine-nginx](https://github.com/ewsdocker/alpine-nginx/wiki) docker image.  
 
+- A pre-built **ewsdocker/alpine-nginx-pkgcache Docker** image is available on [Docker Hub](https://hub.docker.com) at [ewsdocker/alpine-nginx-pkgcache](https://hub.docker.com/r/ewsdocker/alpine-nginx-pkgcache/);
+
+- The source for **ewsdocker/alpine-nginx-pkgcache** is available on [GitHub](https://github.com/) at [ewsdocker/alpine-nginx-pkgcache](https://github.com/ewsdocker/alpine-nginx-pkgcache).  
+
+____  
+
+**Visit the [ewsdocker/alpine-nginx-pkgcache Wiki](https://github.com/ewsdocker/alpine-nginx-pkgcache/wiki/QuickStart) for complete documentation of this docker image.**  
 ____  
 
 **Copyright © 2018. EarthWalk Software.**  
