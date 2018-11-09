@@ -1,4 +1,4 @@
-### ewsdocker/alpine-nginx-pkgcache:3.8.0  
+### ewsdocker/alpine-nginx-pkgcache:3.8.1  
 A NGINX HHTP Web server image based on [ewsdocker/alpine-nginx](https://github.com/ewsdocker/alpine-nginx).  
 ____  
 
@@ -22,16 +22,16 @@ The following script will download the selected **ewsdocker/alpine-nginx-pkgcach
 
 The _default_ values will install all directories and contents in the **docker host** user's home directory.  
 
-**ewsdocker/alpine-nginx-pkgcache:3.8.0**
+**ewsdocker/alpine-nginx-pkgcache:3.8.1**
   
     docker run --rm \
                -v ${HOME}/bin:/userbin \
                -v ${HOME}/.local:/usrlocal \
                -e LMS_BASE="${HOME}/.local" \
                -v ${HOME}/.config/docker:/conf \
-               -v ${HOME}/.config/docker/alpine-nginx-pkgcache-3.8.0:/root \
-               --name=alpine-nginx-pkgcache-3.8.0 \
-           ewsdocker/alpine-nginx-pkgcache:3.8.0 lms-setup-alpine  
+               -v ${HOME}/.config/docker/alpine-nginx-pkgcache-3.8.1:/root \
+               --name=alpine-nginx-pkgcache-3.8.1 \
+           ewsdocker/alpine-nginx-pkgcache:3.8.1 lms-setup-alpine  
 
 ____  
 
@@ -52,12 +52,12 @@ The following _docker run_ command will create and start _alpine-nginx-pkgcache_
            --restart unless-stopped \
            --mount source=pkgcache,target=/usr/share/nginx/html \
            --network=pkgnet \
-           --name=alpine-nginx-pkgcache-3.8.0 \
-       ewsdocker/alpine-nginx-pkgcache:3.8.0  
+           --name=alpine-nginx-pkgcache-3.8.1 \
+       ewsdocker/alpine-nginx-pkgcache:3.8.1  
   
 A copy of the **ewsdocker/alpine-nginx-pkgcache** script above is located in the user's _~/.local/bin folder_, and can be run with the following command on the command-line:
 
-    ~/.local/bin/alpine-nginx-pkgcache-3.8.0  
+    ~/.local/bin/alpine-nginx-pkgcache-3.8.1  
 
 ____  
 
