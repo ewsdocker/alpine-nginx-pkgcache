@@ -1,4 +1,4 @@
-### ewsdocker/alpine-nginx-pkgcache:3.8.1  
+### ewsdocker/alpine-nginx-pkgcache:3.8.2  
 A **NGINX HHTP** Web server image based on [ewsdocker/alpine-nginx](https://github.com/ewsdocker/alpine-nginx).  
 
 **alpine-nginx-pkgcache** provides a method, using only existing Docker containers and Docker resources, to add files to a permanent file-cache and retrieve selected files from the file-cache by a running **Docker build** process.  
@@ -15,16 +15,16 @@ The following script will download the selected **ewsdocker/alpine-nginx-pkgcach
 
 The _default_ values will install all directories and contents in the **docker host** user's home directory.  
 
-**ewsdocker/alpine-nginx-pkgcache:3.8.1**
+**ewsdocker/alpine-nginx-pkgcache:3.8.2**
   
     docker run --rm \
                -v ${HOME}/bin:/userbin \
                -v ${HOME}/.local:/usrlocal \
                -e LMS_BASE="${HOME}/.local" \
                -v ${HOME}/.config/docker:/conf \
-               -v ${HOME}/.config/docker/alpine-nginx-pkgcache-3.8.1:/root \
-               --name=alpine-nginx-pkgcache-3.8.1 \
-           ewsdocker/alpine-nginx-pkgcache:3.8.1 lms-setup-alpine  
+               -v ${HOME}/.config/docker/alpine-nginx-pkgcache-3.8.2:/root \
+               --name=alpine-nginx-pkgcache-3.8.2 \
+           ewsdocker/alpine-nginx-pkgcache:3.8.2 lms-setup-alpine  
 
 ____  
 
@@ -45,13 +45,9 @@ The following _docker run_ command will create and start _alpine-nginx-pkgcache_
            --restart unless-stopped \
            --mount source=pkgcache,target=/usr/share/nginx/html \
            --network=pkgnet \
-           --name=alpine-nginx-pkgcache-3.8.1 \
-       ewsdocker/alpine-nginx-pkgcache:3.8.1  
+           --name=alpine-nginx-pkgcache-3.8.2 \
+       ewsdocker/alpine-nginx-pkgcache:3.8.2  
   
-A copy of the **ewsdocker/alpine-nginx-pkgcache** script above is located in the user's _~/.local/bin folder_, and can be run with the following command on the command-line:
-
-    ~/.local/bin/alpine-nginx-pkgcache-3.8.1  
-
 ____  
 
 The **ewsdocker/alpine-nginx-pkgcache** docker image is based on the latest [ewsdocker/alpine-nginx](https://github.com/ewsdocker/alpine-nginx/wiki) docker image.  

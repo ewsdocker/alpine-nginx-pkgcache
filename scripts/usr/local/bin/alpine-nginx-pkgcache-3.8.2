@@ -2,12 +2,12 @@
 # =========================================================================
 # =========================================================================
 #
-#	alpine-nginx-pkgcache:3.8.1
+#	alpine-nginx-pkgcache:3.8.2
 #
 # =========================================================================
 #
 # @author Jay Wheeler.
-# @version 3.8.1
+# @version 3.8.2
 # @copyright © 2018. EarthWalk Software.
 # @license Licensed under the GNU General Public License, GPL-3.0-or-later.
 # @package ewsdocker/alpine-nginx-pkgcache
@@ -38,8 +38,8 @@
 
 docker run -d \
            --restart unless-stopped \
-           --mount source=pkgcache,target=/usr/share/nginx/html \
            --network=pkgnet \
+           --mount source=pkgcache,target=/usr/share/nginx/html \
            --name=alpine-nginx-pkgcache \
-       ewsdocker/alpine-nginx-pkgcache:3.8.1  
+       ewsdocker/alpine-nginx-pkgcache:3.8.2  
 
