@@ -45,7 +45,7 @@ The following _docker run_ command will create and start _alpine-nginx-pkgcache_
            --restart unless-stopped \
            --mount source=pkgcache,target=/usr/share/nginx/html \
            --network=pkgnet \
-           --name=alpine-nginx-pkgcache-3.8.2 \
+           --name=alpine-nginx-pkgcache \
        ewsdocker/alpine-nginx-pkgcache:3.8.2  
   
 ____  
