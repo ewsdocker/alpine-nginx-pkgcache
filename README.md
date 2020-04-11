@@ -1,4 +1,4 @@
-### ewsdocker/alpine-nginx-pkgcache:3.8.2  
+### ewsdocker/alpine-nginx-pkgcache:3.10.0  
 A **NGINX HHTP** Web server image based on [ewsdocker/alpine-nginx](https://github.com/ewsdocker/alpine-nginx).  
 
 **alpine-nginx-pkgcache** provides a method, using only existing Docker containers and Docker resources, to add files to a permanent file-cache and retrieve selected files from the file-cache by a running **Docker build** process.  
@@ -15,16 +15,16 @@ The following script will download the selected **ewsdocker/alpine-nginx-pkgcach
 
 The _default_ values will install all directories and contents in the **docker host** user's home directory.  
 
-**ewsdocker/alpine-nginx-pkgcache:3.8.2**
+**ewsdocker/alpine-nginx-pkgcache:3.10.0**
   
     docker run --rm \
                -v ${HOME}/bin:/userbin \
                -v ${HOME}/.local:/usrlocal \
                -e LMS_BASE="${HOME}/.local" \
                -v ${HOME}/.config/docker:/conf \
-               -v ${HOME}/.config/docker/alpine-nginx-pkgcache-3.8.2:/root \
-               --name=alpine-nginx-pkgcache-3.8.2 \
-           ewsdocker/alpine-nginx-pkgcache:3.8.2 lms-setup-alpine  
+               -v ${HOME}/.config/docker/alpine-nginx-pkgcache-3.10.0:/root \
+               --name=alpine-nginx-pkgcache-3.10.0 \
+           ewsdocker/alpine-nginx-pkgcache:3.10.0 lms-setup-alpine  
 
 ____  
 
@@ -46,7 +46,7 @@ The following _docker run_ command will create and start _alpine-nginx-pkgcache_
            --mount source=pkgcache,target=/usr/share/nginx/html \
            --network=pkgnet \
            --name=alpine-nginx-pkgcache \
-       ewsdocker/alpine-nginx-pkgcache:3.8.2  
+       ewsdocker/alpine-nginx-pkgcache:3.10.0  
   
 ____  
 
@@ -61,7 +61,7 @@ ____
 **Visit the [ewsdocker/alpine-nginx-pkgcache Wiki](https://github.com/ewsdocker/alpine-nginx-pkgcache/wiki/QuickStart) for complete documentation of this docker image.**  
 ____  
 
-**Copyright © 2018. EarthWalk Software.**  
+**Copyright © 2018, 2020. EarthWalk Software.**  
 **Licensed under the GNU General Public License, GPL-3.0-or-later.**  
 
 This file is part of **ewsdocker/alpine-nginx-pkgcache**.  
